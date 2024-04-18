@@ -1,8 +1,8 @@
 import { ApolloServer, gql } from 'apollo-server-micro';
-import { typeDefs } from "./graphql/typeDefs.js";
+import { typeDefs } from "../graphql/typeDefs.js";
 import { mongoose } from "mongoose";
-import { Employees } from "./schema/employee.js";
-import { User } from "./schema/User.js";
+import { Employees } from "../schema/employee.js";
+import { User } from "../schema/User.js";
 
 mongoose
   .connect(
@@ -111,4 +111,4 @@ const server = new ApolloServer({
 
 await server.start();
 
-export default server.createHandler({ path: "/" });
+export default server.createHandler({ path: "/api/server" });

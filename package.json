@@ -2,10 +2,10 @@
   "name": "101400600_comp3133_assignment1",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "api/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node api/server.js"
   },
   "keywords": [
     "graphql",
